@@ -1,4 +1,4 @@
 [build]
 functions = "netlify/functions" # Path to your functions directory
-publish = "public"
+publish = "/"
 
