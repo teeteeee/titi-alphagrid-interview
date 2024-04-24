@@ -1,0 +1,9 @@
+[build]
+functions = "netlify/functions" # Path to your functions directory
+
+[dev]
+framework = "#custom"
+command = "node app.js" # Replace with your local start command
+targetPort = 8888 # Replace with your local server port
+port = 8888
+publish = "build" # or your build output directory
