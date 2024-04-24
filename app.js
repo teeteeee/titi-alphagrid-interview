@@ -24,6 +24,7 @@ app.get('/tesla-locations', (req, res) => {
   });
 });
 
+module.exports = app;
 module.exports.handler = serverless(app);
 
 // app.listen(port, () => {

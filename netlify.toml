@@ -4,6 +4,11 @@ functions = "netlify/functions" # Path to your functions directory
 [dev]
 framework = "#custom"
 command = "node app.js" # Replace with your local start command
-targetPort = 8888 # Replace with your local server port
-port = 8888
+targetPort = 3000 # Replace with your local server port
+port = 3000
 publish = "build" # or your build output directory
+
+[[redirects]]
+from = "/tesla-locations"
+to = "./netlify/functions/server"
+status = 200
