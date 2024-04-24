@@ -1,8 +1,4 @@
 [build]
 functions = "netlify/functions" # Path to your functions directory
+publish = "/"
 
-[[redirects]]
-from = "/*"
-to = "./netlify/functions/server"
-status = 200
-force = true

@@ -4,7 +4,7 @@ const fs = require('fs');
 const app = express();
 const port = 3000; // or any port you prefer
 
-app.get('/', (req, res) => {
+app.get('/.netlify/functions/tesla-locations', (req, res) => {
   // Make sure to provide the correct path to your JSON file
   fs.readFile('parsed_locations.json', 'utf8', (err, data) => {
     if (err) {
